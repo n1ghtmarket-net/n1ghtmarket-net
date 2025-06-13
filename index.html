@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="vi-VN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ShadowRocket</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <!-- Header Section -->
+        <header class="header">
+            <div class="header-nav">
+                <span class="nav-item">Trang chủ</span>
+                <span class="nav-item active">Bộ sưu tập cấu hình ShadowRocket</span>
+            </div>
+            
+            <div class="title-section">
+                <div class="rocket-icon">
+                    <img src="assets/icon.svg" alt="ShadowRocket" class="icon">
+                </div>
+                <h1 class="main-title">ShadowRocket</h1>
+                <div class="subtitle">⚡ Tốc độ siêu nhanh</div>
+            </div>
+        </header>
+
+        <!-- Configuration Section -->
+        <section class="config-section">
+            <div class="section-header">
+                <h2 class="section-title">—— Cấu hình</h2>
+            </div>
+            
+            <div class="config-buttons">
+                <button class="config-btn primary">Miễn phí Manual</button>
+                <button class="config-btn">File miễn phí</button>
+                <button class="config-btn">File có phí</button>
+            </div>
+        </section>
+
+        <!-- Search Section -->
+        <section class="search-section">
+            <div class="section-header">
+                <h2 class="section-title">—— Tìm kiếm</h2>
+            </div>
+            
+            <div class="search-container">
+                <input type="text" class="search-input" placeholder="Tìm kiếm..." id="searchInput">
+                <i class="fas fa-search search-icon"></i>
+            </div>
+        </section>
+
+        <!-- Options Grid -->
+        <section class="options-section">
+            <div class="options-grid" id="optionsGrid">
+                <!-- Row 1 -->
+                <div class="option-card" data-name="Bốn trong một">Bốn trong một</div>
+                <div class="option-card" data-name="BingGPT cho Safari">BingGPT cho Safari</div>
+                <div class="option-card" data-name="Chặn quảng cáo cơ bản">Chặn quảng cáo cơ bản</div>
+                <div class="option-card" data-name="Chặn quảng cáo nâng cao">Chặn quảng cáo nâng cao</div>
+                <div class="option-card" data-name="Chặn quảng cáo toàn diện 10+">Chặn quảng cáo toàn diện 10+</div>
+                <div class="option-card" data-name="Chặn quảng cáo Pro">Chặn quảng cáo Pro</div>
+                <div class="option-card" data-name="Hôm nay VPN">Hôm nay VPN</div>
+                <div class="option-card" data-name="VPN 5 mạng">VPN 5 mạng</div>
+
+                <!-- Row 2 -->
+                <div class="option-card" data-name="App Store tối ưu">App Store tối ưu</div>
+                <div class="option-card" data-name="Facebook VIP">Facebook VIP</div>
+                <div class="option-card" data-name="Mạng xã hội VIP">Mạng xã hội VIP</div>
+                <div class="option-card" data-name="QQ thành viên">QQ thành viên</div>
+                <div class="option-card" data-name="Facebook Premium">Facebook Premium</div>
+                <div class="option-card" data-name="Mạng xã hội Premium">Mạng xã hội Premium</div>
+                <div class="option-card" data-name="Billboard Hot100">Billboard Hot100</div>
+                <div class="option-card" data-name="Tin tức hôm nay">Tin tức hôm nay</div>
+
+                <!-- Row 3 -->
+                <div class="option-card" data-name="Lướt web nhanh">Lướt web nhanh</div>
+                <div class="option-card" data-name="Phim Trung Quốc VIP">Phim Trung Quốc VIP</div>
+                <div class="option-card" data-name="Bản đồ đi bộ">Bản đồ đi bộ</div>
+                <div class="option-card" data-name="Thi trực tuyến">Thi trực tuyến</div>
+                <div class="option-card" data-name="Đặt phòng Premium">Đặt phòng Premium</div>
+                <div class="option-card" data-name="AdBlock Pro">AdBlock Pro</div>
+                <div class="option-card" data-name="Almay Beauty">Almay Beauty</div>
+                <div class="option-card" data-name="Alpha Tools">Alpha Tools</div>
+
+                <!-- Row 4 -->
+                <div class="option-card" data-name="VPN toàn cầu">VPN toàn cầu</div>
+                <div class="option-card" data-name="Xóa nền ảnh">Xóa nền ảnh</div>
+                <div class="option-card" data-name="Ứng dụng Pro">Ứng dụng Pro</div>
+                <div class="option-card" data-name="Audiomack VIP">Audiomack VIP</div>
+                <div class="option-card" data-name="BitTalk Premium">BitTalk Premium</div>
+                <div class="option-card" data-name="Âm thanh toàn cầu">Âm thanh toàn cầu</div>
+                <div class="option-card" data-name="AI Navigator">AI Navigator</div>
+                <div class="option-card" data-name="Danh sách đen">Danh sách đen</div>
+
+                <!-- Row 5 -->
+                <div class="option-card" data-name="Shadow Phone">Shadow Phone</div>
+                <div class="option-card" data-name="Quạt ngủ">Quạt ngủ</div>
+                <div class="option-card" data-name="Bilibili HD">Bilibili HD</div>
+                <div class="option-card" data-name="Bilibili không quảng cáo">Bilibili không quảng cáo</div>
+                <div class="option-card" data-name="Kết nối VPN">Kết nối VPN</div>
+                <div class="option-card" data-name="ROOT Access">ROOT Access</div>
+                <div class="option-card" data-name="Boys Apps">Boys Apps</div>
+                <div class="option-card" data-name="Điều hướng toàn cầu">Điều hướng toàn cầu</div>
+
+                <!-- Row 6 -->
+                <div class="option-card" data-name="Cloud hàng ngày">Cloud hàng ngày</div>
+                <div class="option-card" data-name="Máy tính HD">Máy tính HD</div>
+                <div class="option-card" data-name="Cloud Navigation Pro">Cloud Navigation Pro</div>
+                <div class="option-card" data-name="Điều hướng kiến thức">Điều hướng kiến thức</div>
+                <div class="option-card" data-name="Color Tools">Color Tools</div>
+                <div class="option-card" data-name="Daily Social">Daily Social</div>
+                <div class="option-card" data-name="Phim ảnh Pro">Phim ảnh Pro</div>
+                <div class="option-card" data-name="Darkroom Pro">Darkroom Pro</div>
+            </div>
+        </section>
+
+        <!-- Social Media Section -->
+        <section class="social-section">
+            <div class="section-header">
+                <h2 class="section-title">—— Liên kết mạng xã hội</h2>
+            </div>
+            
+            <div class="social-links">
+                <a href="https://discord.gg/WT9bUkVCTx" target="_blank" class="social-link discord">
+                    <i class="fab fa-discord"></i>
+                    <div class="social-text">
+                        <span class="social-title">Discord</span>
+                        <span class="social-url">discord.gg/WT9bUkVCTx</span>
+                    </div>
+                </a>
+                
+                <a href="https://facebook.com/share/g/15NA35sEvk" target="_blank" class="social-link facebook">
+                    <i class="fab fa-facebook"></i>
+                    <div class="social-text">
+                        <span class="social-title">Group Facebook</span>
+                        <span class="social-url">facebook.com/share/g/15NA35sEvk</span>
+                    </div>
+                </a>
+                
+                <a href="https://youtube.com/@NightmarketServer" target="_blank" class="social-link youtube">
+                    <i class="fab fa-youtube"></i>
+                    <div class="social-text">
+                        <span class="social-title">Youtube</span>
+                        <span class="social-url">youtube.com/@NightmarketServer</span>
+                    </div>
+                </a>
+                
+                <a href="https://beacons.ai/n1ghtmarket" target="_blank" class="social-link bio">
+                    <i class="fas fa-link"></i>
+                    <div class="social-text">
+                        <span class="social-title">Bio</span>
+                        <span class="social-url">beacons.ai/n1ghtmarket</span>
+                    </div>
+                </a>
+            </div>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
