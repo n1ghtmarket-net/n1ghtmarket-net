@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cho Thuê Tài Khoản - ShadowRocket Services</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="rental-styles.css">
+</head>
+<body>
+    <!-- Background Elements -->
+    <div class="bg-animations">
+        <div class="floating-orb orb-1"></div>
+        <div class="floating-orb orb-2"></div>
+        <div class="floating-orb orb-3"></div>
+        <div class="grid-overlay"></div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navigation">
+        <div class="nav-container">
+            <div class="nav-brand">
+                <img src="assets/icon.svg" alt="ShadowRocket" class="nav-logo">
+                <span class="nav-title">ShadowRocket</span>
+            </div>
+            <div class="nav-links">
+                <a href="index.html" class="nav-link">Modules</a>
+                <a href="rental.html" class="nav-link active">Rental</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header Image -->
+    <div class="header-image-container">
+        <img src="assets/header-image.jpeg" alt="Header Banner" class="header-image">
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <div class="hero-badge">
+                    <i class="fas fa-key"></i>
+                    <span>Premium Account Rental</span>
+                </div>
+                <h1 class="hero-title">
+                    Cho Thuê Tài Khoản
+                    <span class="gradient-text">Premium</span>
+                </h1>
+                <p class="hero-description">
+                    Dịch vụ cho thuê ID Apple và tài khoản Netflix chính hãng với giá cả phải chăng. 
+                    Bảo mật cao, hỗ trợ 24/7 và cam kết chất lượng.
+                </p>
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <div class="stat-number">500+</div>
+                        <div class="stat-label">Khách hàng</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">99%</div>
+                        <div class="stat-label">Độ tin cậy</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">24/7</div>
+                        <div class="stat-label">Hỗ trợ</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services-section" id="services">
+        <div class="section-container">
+            <div class="section-header">
+                <h2 class="section-title">Dịch Vụ Cho Thuê</h2>
+                <p class="section-subtitle">
+                    Lựa chọn gói dịch vụ phù hợp với nhu cầu của bạn
+                </p>
+            </div>
+
+            <div class="services-grid">
+                <!-- Apple ID Rental -->
+                <div class="service-card premium">
+                    <div class="service-header">
+                        <div class="service-icon apple">
+                            <i class="fab fa-apple"></i>
+                        </div>
+                        <div class="service-badge">Phổ biến</div>
+                    </div>
+                    <div class="service-content">
+                        <h3 class="service-title">ID Apple Premium</h3>
+                        <p class="service-description">
+                            Thuê ID Apple để tải game premium, game trả phí và các ứng dụng độc quyền miễn phí
+                        </p>
+                        <div class="service-features">
+                            <div class="feature-item">
+                                <i class="fas fa-check"></i>
+                                <span>Game premium không giới hạn</span>
+                            </div>
+                            <div class="feature-item">
+                                <i class="fas fa-check"></i>
+                                <span>Tải game trả phí miễn phí</span>
+                            </div>
+                            <div class="feature-item">
+                                <i class="fas fa-check"></i>
+                                <span>iCloud 200GB</span>
+                            </div>
+                            <div class="feature-item">
+                                <i class="fas fa-check"></i>
+                                <span>Hỗ trợ 24/7</span>
+                            </div>
+                        </div>
+                        <div class="service-pricing">
+                            <div class="price-options">
+                                <div class="price-option">
+                                    <span class="price">50.000 VNĐ</span>
+                                    <span class="period">/ 1 tháng</span>
+                                </div>
+                                <div class="price-option">
+                                    <span class="price">130.000 VNĐ</span>
+                                    <span class="period">/ 3 tháng</span>
+                                </div>
+                                <div class="price-option popular">
+                                    <span class="price">200.000 VNĐ</span>
+                                    <span class="period">/ 6 tháng</span>
+                                    <span class="discount">Tiết kiệm 100k</span>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="service-btn" onclick="contactForService('Apple ID')">
+                            <i class="fab fa-discord"></i>
+                            Liên hệ thuê
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Netflix Rental -->
+                <div class="service-card">
+                    <div class="service-header">
+                        <div class="service-icon netflix">
+                            <i class="fas fa-tv"></i>
+                        </div>
+                    </div>
+                    <div class="service-content">
+                        <h3 class="service-title">Netflix Premium</h3>
+                        <p class="service-description">
+                            Thuê tài khoản Netflix Premium để xem phim, series chất lượng 4K không giới hạn
+                        </p>
+                        <div class="service-features">
+                            <div class="feature-item">
+                                <i class="fas fa-check"></i>
+                                <span>Chất lượng 4K Ultra HD</span>
+                            </div>
+                            <div class="feature-item">
+                                <i class="fas fa-check"></i>
+                                <span>Xem trên 4 thiết bị đồng thời</span>
+                            </div>
+                            <div class="feature-item">
+                                <i class="fas fa-check"></i>
+                                <span>Thư viện phim khổng lồ</span>
+                            </div>
+                            <div class="feature-item">
+                                <i class="fas fa-check"></i>
+                                <span>Không quảng cáo</span>
+                            </div>
+                        </div>
+                        <div class="service-pricing">
+                            <div class="price-options">
+                                <div class="price-option">
+                                    <span class="price">70.000 VNĐ</span>
+                                    <span class="period">/ 1 tháng</span>
+                                </div>
+                                <div class="price-option">
+                                    <span class="price">200.000 VNĐ</span>
+                                    <span class="period">/ 3 tháng</span>
+                                </div>
+                                <div class="price-option popular">
+                                    <span class="price">500.000 VNĐ</span>
+                                    <span class="period">/ 6 tháng</span>
+                                    <span class="discount">Tiết kiệm 120k</span>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="service-btn" onclick="contactForService('Netflix')">
+                            <i class="fab fa-discord"></i>
+                            Liên hệ thuê
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Spotify Premium -->
+                <div class="service-card">
+                    <div class="service-header">
+                        <div class="service-icon spotify">
+                            <i class="fab fa-spotify"></i>
+                        </div>
+                    </div>
+                    <div class="service-content">
+                        <h3 class="service-title">Spotify Premium</h3>
+                        <p class="service-description">
+                            Thuê tài khoản Spotify Premium để nghe nhạc chất lượng cao, không quảng cáo
+                        </p>
+                        <div class="service-features">
+                            <div class="feature-item">
+                                <i class="fas fa-check"></i>
+                                <span>Chất lượng âm thanh cao</span>
+                            </div>
+                            <div class="feature-item">
+                                <i class="fas fa-check"></i>
+                                <span>Tải nhạc offline</span>
+                            </div>
+                            <div class="feature-item">
+                                <i class="fas fa-check"></i>
+                                <span>Không quảng cáo</span>
+                            </div>
+                            <div class="feature-item">
+                                <i class="fas fa-check"></i>
+                                <span>Playlist không giới hạn</span>
+                            </div>
+                        </div>
+                        <div class="service-pricing">
+                            <div class="price-options">
+                                <div class="price-option">
+                                    <span class="price">30.000 VNĐ</span>
+                                    <span class="period">/ 1 tháng</span>
+                                </div>
+                                <div class="price-option">
+                                    <span class="price">80.000 VNĐ</span>
+                                    <span class="period">/ 3 tháng</span>
+                                </div>
+                                <div class="price-option popular">
+                                    <span class="price">140.000 VNĐ</span>
+                                    <span class="period">/ 6 tháng</span>
+                                    <span class="discount">Tiết kiệm 40k</span>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="service-btn" onclick="contactForService('Spotify Premium')">
+                            <i class="fab fa-discord"></i>
+                            Liên hệ thuê
+                        </button>
+                    </div>
+                </div>
+
+                <!-- YouTube Premium -->
+                <div class="service-card">
+                    <div class="service-header">
+                        <div class="service-icon youtube">
+                            <i class="fab fa-youtube"></i>
+                        </div>
+                    </div>
+                    <div class="service-content">
+                        <h3 class="service-title">YouTube Premium</h3>
+                        <p class="service-description">
+                            Thuê tài khoản YouTube Premium để xem video không quảng cáo và nghe YouTube Music
+                        </p>
+                        <div class="service-features">
+                            <div class="feature-item">
+                                <i class="fas fa-check"></i>
+                                <span>Xem không quảng cáo</span>
+                            </div>
+                            <div class="feature-item">
+                                <i class="fas fa-check"></i>
+                                <span>Tải video offline</span>
+                            </div>
+                            <div class="feature-item">
+                                <i class="fas fa-check"></i>
+                                <span>YouTube Music Premium</span>
+                            </div>
+                            <div class="feature-item">
+                                <i class="fas fa-check"></i>
+                                <span>Phát nền không giới hạn</span>
+                            </div>
+                        </div>
+                        <div class="service-pricing">
+                            <div class="price-options">
+                                <div class="price-option">
+                                    <span class="price">35.000 VNĐ</span>
+                                    <span class="period">/ 1 tháng</span>
+                                </div>
+                                <div class="price-option">
+                                    <span class="price">95.000 VNĐ</span>
+                                    <span class="period">/ 3 tháng</span>
+                                </div>
+                                <div class="price-option popular">
+                                    <span class="price">170.000 VNĐ</span>
+                                    <span class="period">/ 6 tháng</span>
+                                    <span class="discount">Tiết kiệm 40k</span>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="service-btn" onclick="contactForService('YouTube Premium')">
+                            <i class="fab fa-discord"></i>
+                            Liên hệ thuê
+                        </button>
+                    </div>
+                </div>
+
+                </div>
+        </div>
+    </section>
+
+    <!-- How It Works Section -->
+    <section class="how-it-works">
+        <div class="section-container">
+            <div class="section-header">
+                <h2 class="section-title">Quy Trình Thuê</h2>
+                <p class="section-subtitle">Đơn giản và nhanh chóng</p>
+            </div>
+            
+            <div class="steps-grid">
+                <div class="step-item">
+                    <div class="step-number">1</div>
+                    <div class="step-icon">
+                        <i class="fab fa-telegram"></i>
+                    </div>
+                    <h3 class="step-title">Liên hệ</h3>
+                    <p class="step-description">Liên hệ qua Telegram để chọn gói dịch vụ phù hợp</p>
+                </div>
+                
+                <div class="step-item">
+                    <div class="step-number">2</div>
+                    <div class="step-icon">
+                        <i class="fas fa-credit-card"></i>
+                    </div>
+                    <h3 class="step-title">Thanh toán</h3>
+                    <p class="step-description">Thanh toán qua các phương thức được hỗ trợ</p>
+                </div>
+                
+                <div class="step-item">
+                    <div class="step-number">3</div>
+                    <div class="step-icon">
+                        <i class="fas fa-key"></i>
+                    </div>
+                    <h3 class="step-title">Nhận tài khoản</h3>
+                    <p class="step-description">Nhận thông tin tài khoản ngay sau khi thanh toán</p>
+                </div>
+                
+                <div class="step-item">
+                    <div class="step-number">4</div>
+                    <div class="step-icon">
+                        <i class="fas fa-headset"></i>
+                    </div>
+                    <h3 class="step-title">Hỗ trợ</h3>
+                    <p class="step-description">Được hỗ trợ 24/7 trong suốt thời gian thuê</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section">
+        <div class="section-container">
+            <div class="section-header">
+                <h2 class="section-title">Câu Hỏi Thường Gặp</h2>
+                <p class="section-subtitle">Giải đáp những thắc mắc phổ biến</p>
+            </div>
+            
+            <div class="faq-grid">
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Tài khoản có bị khóa không?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Tất cả tài khoản đều là chính hãng và được bảo hành. Nếu có sự cố, chúng tôi sẽ thay thế miễn phí.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Có thể sử dụng trên nhiều thiết bị?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Apple ID có thể dùng trên 3 thiết bị, Netflix Premium cho phép xem trên 4 thiết bị đồng thời.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Phương thức thanh toán nào được hỗ trợ?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Chúng tôi hỗ trợ chuyển khoản ngân hàng, Momo, ZaloPay và các ví điện tử phổ biến.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Có chính sách hoàn tiền không?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Chúng tôi có chính sách hoàn tiền trong 24h đầu nếu dịch vụ không hoạt động như cam kết.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-section" id="contact">
+        <div class="section-container">
+            <div class="section-header">
+                <h2 class="section-title">Liên Hệ Ngay</h2>
+                <p class="section-subtitle">Hỗ trợ 24/7 qua các kênh sau</p>
+            </div>
+            
+            <div class="contact-grid">
+                <div class="contact-item">
+                    <div class="contact-icon telegram">
+                        <i class="fab fa-telegram"></i>
+                    </div>
+                    <h3>Telegram</h3>
+                    <p>Liên hệ trực tiếp và nhanh chóng</p>
+                    <a href="https://t.me/yourusername" class="contact-btn" target="_blank">
+                        Liên hệ ngay
+                    </a>
+                </div>
+                
+                <div class="contact-item">
+                    <div class="contact-icon discord">
+                        <i class="fab fa-discord"></i>
+                    </div>
+                    <h3>Discord</h3>
+                    <p>Tham gia cộng đồng và nhận hỗ trợ</p>
+                    <a href="https://discord.gg/WT9bUkVCTx" class="contact-btn" target="_blank">
+                        Tham gia
+                    </a>
+                </div>
+                
+                <div class="contact-item">
+                    <div class="contact-icon facebook">
+                        <i class="fab fa-facebook"></i>
+                    </div>
+                    <h3>Facebook</h3>
+                    <p>Theo dõi tin tức và cập nhật</p>
+                    <a href="https://facebook.com/share/g/15NA35sEvk" class="contact-btn" target="_blank">
+                        Theo dõi
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <img src="assets/icon.svg" alt="ShadowRocket" class="footer-logo">
+                    <h3>ShadowRocket Services</h3>
+                    <p>Premium account rental services</p>
+                </div>
+                <div class="footer-links">
+                    <div class="link-group">
+                        <h4>Dịch vụ</h4>
+                        <a href="index.html" class="footer-link">Modules</a>
+                        <a href="rental.html" class="footer-link">Rental</a>
+                        <a href="#contact" class="footer-link">Contact</a>
+                    </div>
+                    <div class="link-group">
+                        <h4>Liên kết</h4>
+                        <a href="https://discord.gg/WT9bUkVCTx" target="_blank" class="footer-link">
+                            <i class="fab fa-discord"></i>
+                            Discord
+                        </a>
+                        <a href="https://facebook.com/share/g/15NA35sEvk" target="_blank" class="footer-link">
+                            <i class="fab fa-facebook"></i>
+                            Facebook
+                        </a>
+                        <a href="https://t.me/yourusername" target="_blank" class="footer-link">
+                            <i class="fab fa-telegram"></i>
+                            Telegram
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 ShadowRocket Services. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Footer Banner -->
+    <div class="footer-banner-container">
+        <img src="assets/footer-banner.jpeg" alt="Footer Banner" class="footer-banner">
+    </div>
+
+    <!-- Toast Notification -->
+    <div class="toast" id="toast">
+        <div class="toast-content">
+            <i class="fas fa-check-circle toast-icon"></i>
+            <span class="toast-message"></span>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="rental-script.js"></script>
+</body>
+</html>
