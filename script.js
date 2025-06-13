@@ -318,12 +318,7 @@ function initializeAnimations() {
         observer.observe(el);
     });
 
-    // Phone mockup animation
-    const phoneMockup = document.querySelector('.phone-mockup');
-    if (phoneMockup) {
-        // Add subtle floating animation
-        phoneMockup.style.animation = 'float 6s ease-in-out infinite';
-    }
+    
 
     // Hero stats counter animation
     const statNumbers = document.querySelectorAll('.stat-number');
