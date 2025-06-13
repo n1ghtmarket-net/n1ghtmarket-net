@@ -1,160 +1,295 @@
 <!DOCTYPE html>
-<html lang="vi-VN">
+<html lang="vi">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ShadowRocket</title>
+    <title>ShadowRocket Modules - Bộ Sưu Tập Cấu Hình Premium</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
 </head>
 <body>
-    <div class="container">
-        <!-- Header Section -->
-        <header class="header">
-            <div class="header-nav">
-                <span class="nav-item">Trang chủ</span>
-                <span class="nav-item active">Bộ sưu tập cấu hình ShadowRocket</span>
+    <!-- Background Elements -->
+    <div class="bg-animations">
+        <div class="floating-orb orb-1"></div>
+        <div class="floating-orb orb-2"></div>
+        <div class="floating-orb orb-3"></div>
+        <div class="grid-overlay"></div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navigation">
+        <div class="nav-container">
+            <div class="nav-brand">
+                <img src="assets/icon.svg" alt="ShadowRocket" class="nav-logo">
+                <span class="nav-title">ShadowRocket</span>
             </div>
-            
-            <div class="title-section">
-                <div class="rocket-icon">
-                    <img src="assets/icon.svg" alt="ShadowRocket" class="icon">
+            <div class="nav-links">
+                <a href="#modules" class="nav-link active">Modules</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <div class="hero-badge">
+                    <i class="fas fa-rocket"></i>
+                    <span>Premium Modules Collection</span>
                 </div>
-                <h1 class="main-title">ShadowRocket</h1>
-                <div class="subtitle">⚡ Tốc độ siêu nhanh</div>
+                <h1 class="hero-title">
+                    Unlock Premium Features with
+                    <span class="gradient-text">ShadowRocket</span>
+                </h1>
+                <p class="hero-description">
+                    Bộ sưu tập các module premium chất lượng cao, được cập nhật thường xuyên 
+                    để mang lại trải nghiệm tối ưu nhất cho bạn.
+                </p>
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <div class="stat-number">5+</div>
+                        <div class="stat-label">Premium Modules</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">99%</div>
+                        <div class="stat-label">Uptime</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">24/7</div>
+                        <div class="stat-label">Support</div>
+                    </div>
+                </div>
             </div>
-        </header>
+            <div class="hero-visual">
+                <div class="phone-mockup">
+                    <div class="phone-screen">
+                        <div class="app-interface">
+                            <div class="app-header">
+                                <div class="status-bar">
+                                    <span>9:41</span>
+                                    <span>100%</span>
+                                </div>
+                                <h3>ShadowRocket</h3>
+                            </div>
+                            <div class="app-modules">
+                                <div class="module-item active">
+                                    <i class="fab fa-youtube"></i>
+                                    <span>YouTube Premium</span>
+                                </div>
+                                <div class="module-item">
+                                    <i class="fab fa-spotify"></i>
+                                    <span>Spotify Premium</span>
+                                </div>
+                                <div class="module-item">
+                                    <i class="fas fa-music"></i>
+                                    <span>SoundCloud Plus</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-        <!-- Configuration Section -->
-        <section class="config-section">
+    <!-- Modules Section -->
+    <section class="modules-section" id="modules">
+        <div class="section-container">
             <div class="section-header">
-                <h2 class="section-title">—— Cấu hình</h2>
+                <h2 class="section-title">Premium Modules</h2>
+                <p class="section-subtitle">
+                    Chọn module phù hợp với nhu cầu của bạn. Chỉ cần click để sao chép link.
+                </p>
             </div>
-            
-            <div class="config-buttons">
-                <button class="config-btn primary">Miễn phí Manual</button>
-                <button class="config-btn">File miễn phí</button>
-                <button class="config-btn">File có phí</button>
-            </div>
-        </section>
 
-        <!-- Search Section -->
-        <section class="search-section">
-            <div class="section-header">
-                <h2 class="section-title">—— Tìm kiếm</h2>
-            </div>
-            
+            <!-- Search -->
             <div class="search-container">
-                <input type="text" class="search-input" placeholder="Tìm kiếm..." id="searchInput">
-                <i class="fas fa-search search-icon"></i>
+                <div class="search-box">
+                    <i class="fas fa-search search-icon"></i>
+                    <input type="text" placeholder="Tìm kiếm module..." id="searchInput" class="search-input">
+                    <div class="search-clear" id="searchClear">
+                        <i class="fas fa-times"></i>
+                    </div>
+                </div>
             </div>
-        </section>
 
-        <!-- Options Grid -->
-        <section class="options-section">
-            <div class="options-grid" id="optionsGrid">
-                <!-- Row 1 -->
-                <div class="option-card" data-name="Bốn trong một">Bốn trong một</div>
-                <div class="option-card" data-name="BingGPT cho Safari">BingGPT cho Safari</div>
-                <div class="option-card" data-name="Chặn quảng cáo cơ bản">Chặn quảng cáo cơ bản</div>
-                <div class="option-card" data-name="Chặn quảng cáo nâng cao">Chặn quảng cáo nâng cao</div>
-                <div class="option-card" data-name="Chặn quảng cáo toàn diện 10+">Chặn quảng cáo toàn diện 10+</div>
-                <div class="option-card" data-name="Chặn quảng cáo Pro">Chặn quảng cáo Pro</div>
-                <div class="option-card" data-name="Hôm nay VPN">Hôm nay VPN</div>
-                <div class="option-card" data-name="VPN 5 mạng">VPN 5 mạng</div>
-
-                <!-- Row 2 -->
-                <div class="option-card" data-name="App Store tối ưu">App Store tối ưu</div>
-                <div class="option-card" data-name="Facebook VIP">Facebook VIP</div>
-                <div class="option-card" data-name="Mạng xã hội VIP">Mạng xã hội VIP</div>
-                <div class="option-card" data-name="QQ thành viên">QQ thành viên</div>
-                <div class="option-card" data-name="Facebook Premium">Facebook Premium</div>
-                <div class="option-card" data-name="Mạng xã hội Premium">Mạng xã hội Premium</div>
-                <div class="option-card" data-name="Billboard Hot100">Billboard Hot100</div>
-                <div class="option-card" data-name="Tin tức hôm nay">Tin tức hôm nay</div>
-
-                <!-- Row 3 -->
-                <div class="option-card" data-name="Lướt web nhanh">Lướt web nhanh</div>
-                <div class="option-card" data-name="Phim Trung Quốc VIP">Phim Trung Quốc VIP</div>
-                <div class="option-card" data-name="Bản đồ đi bộ">Bản đồ đi bộ</div>
-                <div class="option-card" data-name="Thi trực tuyến">Thi trực tuyến</div>
-                <div class="option-card" data-name="Đặt phòng Premium">Đặt phòng Premium</div>
-                <div class="option-card" data-name="AdBlock Pro">AdBlock Pro</div>
-                <div class="option-card" data-name="Almay Beauty">Almay Beauty</div>
-                <div class="option-card" data-name="Alpha Tools">Alpha Tools</div>
-
-                <!-- Row 4 -->
-                <div class="option-card" data-name="VPN toàn cầu">VPN toàn cầu</div>
-                <div class="option-card" data-name="Xóa nền ảnh">Xóa nền ảnh</div>
-                <div class="option-card" data-name="Ứng dụng Pro">Ứng dụng Pro</div>
-                <div class="option-card" data-name="Audiomack VIP">Audiomack VIP</div>
-                <div class="option-card" data-name="BitTalk Premium">BitTalk Premium</div>
-                <div class="option-card" data-name="Âm thanh toàn cầu">Âm thanh toàn cầu</div>
-                <div class="option-card" data-name="AI Navigator">AI Navigator</div>
-                <div class="option-card" data-name="Danh sách đen">Danh sách đen</div>
-
-                <!-- Row 5 -->
-                <div class="option-card" data-name="Shadow Phone">Shadow Phone</div>
-                <div class="option-card" data-name="Quạt ngủ">Quạt ngủ</div>
-                <div class="option-card" data-name="Bilibili HD">Bilibili HD</div>
-                <div class="option-card" data-name="Bilibili không quảng cáo">Bilibili không quảng cáo</div>
-                <div class="option-card" data-name="Kết nối VPN">Kết nối VPN</div>
-                <div class="option-card" data-name="ROOT Access">ROOT Access</div>
-                <div class="option-card" data-name="Boys Apps">Boys Apps</div>
-                <div class="option-card" data-name="Điều hướng toàn cầu">Điều hướng toàn cầu</div>
-
-                <!-- Row 6 -->
-                <div class="option-card" data-name="Cloud hàng ngày">Cloud hàng ngày</div>
-                <div class="option-card" data-name="Máy tính HD">Máy tính HD</div>
-                <div class="option-card" data-name="Cloud Navigation Pro">Cloud Navigation Pro</div>
-                <div class="option-card" data-name="Điều hướng kiến thức">Điều hướng kiến thức</div>
-                <div class="option-card" data-name="Color Tools">Color Tools</div>
-                <div class="option-card" data-name="Daily Social">Daily Social</div>
-                <div class="option-card" data-name="Phim ảnh Pro">Phim ảnh Pro</div>
-                <div class="option-card" data-name="Darkroom Pro">Darkroom Pro</div>
+            <!-- Featured Module -->
+            <div class="featured-module" data-name="All In One" data-url="https://raw.githubusercontent.com/dhungx/modules-shadowrocket/refs/heads/main/all-in-one.conf">
+                <div class="featured-badge">
+                    <i class="fas fa-star"></i>
+                    Đặc biệt
+                </div>
+                <div class="featured-content">
+                    <div class="featured-icon">
+                        <i class="fas fa-rocket"></i>
+                    </div>
+                    <div class="featured-info">
+                        <h3 class="featured-title">All In One</h3>
+                        <p class="featured-desc">Tất cả các module premium trong một file duy nhất</p>
+                        <div class="featured-features">
+                            <span class="feature-tag">YouTube Premium</span>
+                            <span class="feature-tag">Spotify Premium</span>
+                            <span class="feature-tag">+20 Apps</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="featured-action">
+                    <button class="btn-copy">
+                        <i class="fas fa-copy"></i>
+                        Copy Link
+                    </button>
+                </div>
             </div>
-        </section>
 
-        <!-- Social Media Section -->
-        <section class="social-section">
+            <!-- Modules Grid -->
+            <div class="modules-grid" id="modulesGrid">
+                <div class="module-card" data-name="YouTube Premium" data-url="https://raw.githubusercontent.com/NightmarketServer/Youtube-Premium/refs/heads/main/YouTubePre.module">
+                    <div class="module-icon youtube">
+                        <i class="fab fa-youtube"></i>
+                    </div>
+                    <div class="module-info">
+                        <h3 class="module-name">YouTube Premium</h3>
+                        <p class="module-desc">Không quảng cáo, phát nền, chất lượng cao</p>
+                    </div>
+                    <div class="module-status">
+                        <span class="status-dot active"></span>
+                        <span class="status-text">Active</span>
+                    </div>
+                </div>
+
+                <div class="module-card" data-name="Spotify Premium" data-url="https://raw.githubusercontent.com/NightmarketServer/Youtube-Premium/refs/heads/main/YouTubePre.module">
+                    <div class="module-icon spotify">
+                        <i class="fab fa-spotify"></i>
+                    </div>
+                    <div class="module-info">
+                        <h3 class="module-name">Spotify Premium</h3>
+                        <p class="module-desc">Nghe nhạc không giới hạn, chất lượng cao</p>
+                    </div>
+                    <div class="module-status">
+                        <span class="status-dot active"></span>
+                        <span class="status-text">Active</span>
+                    </div>
+                </div>
+
+                <div class="module-card" data-name="SoundCloud Plus" data-url="https://raw.githubusercontent.com/NightmarketServer/SoundCloudPlus/refs/heads/main/soundcloudplus.module">
+                    <div class="module-icon soundcloud">
+                        <i class="fab fa-soundcloud"></i>
+                    </div>
+                    <div class="module-info">
+                        <h3 class="module-name">SoundCloud Plus</h3>
+                        <p class="module-desc">Phát nhạc offline, không quảng cáo</p>
+                    </div>
+                    <div class="module-status">
+                        <span class="status-dot active"></span>
+                        <span class="status-text">Active</span>
+                    </div>
+                </div>
+
+                <div class="module-card" data-name="Locket Widget" data-url="https://raw.githubusercontent.com/NightmarketServer/Locket/refs/heads/main/locket.module">
+                    <div class="module-icon locket">
+                        <i class="fas fa-heart"></i>
+                    </div>
+                    <div class="module-info">
+                        <h3 class="module-name">Locket Widget</h3>
+                        <p class="module-desc">Widget chia sẻ ảnh với bạn bè</p>
+                    </div>
+                    <div class="module-status">
+                        <span class="status-dot active"></span>
+                        <span class="status-text">Active</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- No Results -->
+            <div class="no-results" id="noResults" style="display: none;">
+                <div class="no-results-icon">
+                    <i class="fas fa-search"></i>
+                </div>
+                <h3>Không tìm thấy module</h3>
+                <p>Thử tìm kiếm với từ khóa khác</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- How to Use Section -->
+    <section class="how-to-use">
+        <div class="section-container">
             <div class="section-header">
-                <h2 class="section-title">—— Liên kết mạng xã hội</h2>
+                <h2 class="section-title">Cách sử dụng</h2>
+                <p class="section-subtitle">3 bước đơn giản để cài đặt module</p>
             </div>
-            
-            <div class="social-links">
-                <a href="https://discord.gg/WT9bUkVCTx" target="_blank" class="social-link discord">
-                    <i class="fab fa-discord"></i>
-                    <div class="social-text">
-                        <span class="social-title">Discord</span>
-                        <span class="social-url">discord.gg/WT9bUkVCTx</span>
+            <div class="steps-grid">
+                <div class="step-card">
+                    <div class="step-number">1</div>
+                    <div class="step-content">
+                        <h3>Click module</h3>
+                        <p>Chọn module bạn muốn và click để copy link</p>
                     </div>
-                </a>
-                
-                <a href="https://facebook.com/share/g/15NA35sEvk" target="_blank" class="social-link facebook">
-                    <i class="fab fa-facebook"></i>
-                    <div class="social-text">
-                        <span class="social-title">Group Facebook</span>
-                        <span class="social-url">facebook.com/share/g/15NA35sEvk</span>
+                </div>
+                <div class="step-card">
+                    <div class="step-number">2</div>
+                    <div class="step-content">
+                        <h3>Mở ShadowRocket</h3>
+                        <p>Vào phần Config > Add Config From URL</p>
                     </div>
-                </a>
-                
-                <a href="https://youtube.com/@NightmarketServer" target="_blank" class="social-link youtube">
-                    <i class="fab fa-youtube"></i>
-                    <div class="social-text">
-                        <span class="social-title">Youtube</span>
-                        <span class="social-url">youtube.com/@NightmarketServer</span>
+                </div>
+                <div class="step-card">
+                    <div class="step-number">3</div>
+                    <div class="step-content">
+                        <h3>Paste & Use</h3>
+                        <p>Dán link vào và bắt đầu sử dụng</p>
                     </div>
-                </a>
-                
-                <a href="https://beacons.ai/n1ghtmarket" target="_blank" class="social-link bio">
-                    <i class="fas fa-link"></i>
-                    <div class="social-text">
-                        <span class="social-title">Bio</span>
-                        <span class="social-url">beacons.ai/n1ghtmarket</span>
-                    </div>
-                </a>
+                </div>
             </div>
-        </section>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <img src="assets/icon.svg" alt="ShadowRocket" class="footer-logo">
+                    <h3>ShadowRocket Modules</h3>
+                    <p>Premium modules collection</p>
+                </div>
+                <div class="footer-links">
+                    <div class="link-group">
+                        <h4>Liên kết</h4>
+                        <a href="https://discord.gg/WT9bUkVCTx" target="_blank" class="footer-link">
+                            <i class="fab fa-discord"></i>
+                            Discord
+                        </a>
+                        <a href="https://facebook.com/share/g/15NA35sEvk" target="_blank" class="footer-link">
+                            <i class="fab fa-facebook"></i>
+                            Facebook
+                        </a>
+                        <a href="https://youtube.com/@NightmarketServer" target="_blank" class="footer-link">
+                            <i class="fab fa-youtube"></i>
+                            YouTube
+                        </a>
+                        <a href="https://beacons.ai/n1ghtmarket" target="_blank" class="footer-link">
+                            <i class="fas fa-link"></i>
+                            Bio Links
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 ShadowRocket Modules. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Toast Notification -->
+    <div class="toast" id="toast">
+        <div class="toast-content">
+            <i class="fas fa-check-circle toast-icon"></i>
+            <span class="toast-message"></span>
+        </div>
     </div>
 
     <script src="script.js"></script>
